@@ -1,13 +1,19 @@
 package com.myapp.spring.command;
 
+import java.math.BigDecimal;
+
 public class DebitCommand extends BaseCommand<String> {
 
-	private final Double accountBalance;
-	public DebitCommand(String id,Double accountBalance) {
+	private final BigDecimal debitAmount;
+	public DebitCommand(String id,BigDecimal debitAmount) {
 		super(id);
 		
-		this.accountBalance = accountBalance;
+		this.debitAmount = debitAmount;
 		// TODO Auto-generated constructor stub
+	}
+	
+	public BigDecimal getDebitAmount() {
+		return debitAmount;
 	}
 
 	

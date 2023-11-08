@@ -10,6 +10,10 @@ public class BaseEvent<T> {
 		this.id = id;
 	}
 	
+	public T getId() {
+		return id;
+	}
+	
 	
 
 }

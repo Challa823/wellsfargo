@@ -1,0 +1,10 @@
+package com.myapp.spring.events;
+
+public class AmountCreditedEvent extends BaseEvent {
+
+	public AmountCreditedEvent(Object id) {
+		super(id);
+		// TODO Auto-generated constructor stub
+	}
+
+}
