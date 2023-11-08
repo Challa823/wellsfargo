@@ -1,0 +1,17 @@
+package demo1;
+
+public interface AccountRepository extends Repository<Account, String> {
+    Try<Optional<Account>> query(String no);
+    Try<Account> store(Account a);
+    default Try<Balance> balance(String no) {
+        Try<Optional<Account>> account = query(no);
+        if (account.isSuccess() && account.get().isPresent()) {
+            return new Success<>(account.get().get().getBalance());
+        } else if (account.isSuccess() && !account.get().isPresent()) {
+            return new Failure<>(new Exception("No account exists with no " + no));
+        } else {
+            return new Failure<>(account.getFailure());
+        }
+    }
+    Try<List<Account>> query(Date openedOn);
+}

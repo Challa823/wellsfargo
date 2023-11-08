@@ -1,0 +1,18 @@
+package com.myapp.spring.command;
+
+import java.math.BigDecimal;
+
+public class NewAccountCreateCommand extends BaseCommand<String> {
+
+	private final BigDecimal accountBalance;
+	public NewAccountCreateCommand(String id,BigDecimal accountBalance) {
+		super(id);
+		
+		this.accountBalance = accountBalance;
+		// TODO Auto-generated constructor stub
+	}
+
+	
+	
+	
+}

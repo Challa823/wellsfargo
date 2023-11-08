@@ -1,0 +1,17 @@
+package com.myapp.spring.events;
+
+import org.axonframework.modelling.command.TargetAggregateIdentifier;
+
+public class BaseEvent<T> {
+	
+	
+	private final T id;
+
+	public BaseEvent(T id) {
+		
+		this.id = id;
+	}
+	
+	
+
+}

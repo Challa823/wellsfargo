@@ -1,0 +1,5 @@
+package com.myapp.spring.command;
+
+public class NewAccountCreateCommand extends BaseCommand<T> {
+
+}

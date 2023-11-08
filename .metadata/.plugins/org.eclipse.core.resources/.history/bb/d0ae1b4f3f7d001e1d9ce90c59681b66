@@ -1,0 +1,7 @@
+package com.myapp.spring.domain.aggregate;
+
+
+
+public class AccountEntityAggregate {
+
+}

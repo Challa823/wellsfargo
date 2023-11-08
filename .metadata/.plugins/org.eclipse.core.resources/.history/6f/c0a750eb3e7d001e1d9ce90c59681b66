@@ -1,0 +1,30 @@
+package com.myapp.spring.domain.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
+
+public class AccountQueryEntity {
+	
+	@Id
+	private String id;
+	
+	private Double balance;
+	
+	private Currency currency;
+	
+	private Status status;
+	
+	
+	
+
+	private enum Currency{
+		INR,USD
+	}
+	private enum Status{
+		HOLD,COMPLETED
+	}
+}
+
+

@@ -1,0 +1,66 @@
+package com.myapp.spring.domain.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
+
+public class AccountQueryEntity {
+	
+	@Id
+	private String id;
+	
+	private Double balance;
+	
+	private Currency currency;
+	
+	private Status status;
+	
+	
+	
+	
+	
+	
+
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public Double getBalance() {
+		return balance;
+	}
+	public void setBalance(Double balance) {
+		this.balance = balance;
+	}
+	public Currency getCurrency() {
+		return currency;
+	}
+	public void setCurrency(Currency currency) {
+		this.currency = currency;
+	}
+	public Status getStatus() {
+		return status;
+	}
+	public void setStatus(Status status) {
+		this.status = status;
+	}
+	
+	
+	@Override
+	public String toString() {
+		return "AccountQueryEntity [id=" + id + ", balance=" + balance + ", currency=" + currency + ", status=" + status
+				+ "]";
+	}
+
+
+	private enum Currency{
+		INR,USD
+	}
+	private enum Status{
+		HOLD,COMPLETED
+	}
+}
+
+

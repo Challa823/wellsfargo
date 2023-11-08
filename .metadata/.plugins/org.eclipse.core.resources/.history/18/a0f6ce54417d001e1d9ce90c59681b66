@@ -1,0 +1,16 @@
+package com.myapp.spring.command;
+
+public class NewAccountCreateCommand extends BaseCommand<String> {
+
+	private final Double accountBalance;
+	public NewAccountCreateCommand(String id,Double accountBalance) {
+		super(id);
+		
+		this.accountBalance = accountBalance
+		// TODO Auto-generated constructor stub
+	}
+
+	
+	
+	
+}

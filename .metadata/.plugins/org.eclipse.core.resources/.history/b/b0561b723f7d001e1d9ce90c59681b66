@@ -1,0 +1,16 @@
+package com.myapp.spring.domain.aggregate;
+
+import org.axonframework.modelling.command.AggregateIdentifier;
+import org.axonframework.spring.stereotype.Aggregate;
+
+@Aggregate
+public class AccountEntityAggregate {
+	
+	@AggregateIdentifier
+	private String id;
+	
+	private Double balance;
+	
+	
+
+}

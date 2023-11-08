@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="jakarta.persistence.Entity"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Id"/>
+    <fullyQualifiedTypeName name="com.myapp.spring.domain.entity.AccountQueryEntity.Currency"/>
+    <fullyQualifiedTypeName name="org.axonframework.spring.stereotype.Aggregate"/>
+    <fullyQualifiedTypeName name="org.axonframework.modelling.command.AggregateIdentifier"/>
+    <fullyQualifiedTypeName name="org.springframework.data.repository.CrudRepository"/>
+    <fullyQualifiedTypeName name="com.myapp.spring.domain.entity.AccountQueryEntity"/>
+    <fullyQualifiedTypeName name="org.axonframework.modelling.command.TargetAggregateIdentifier"/>
+</qualifiedTypeNameHistroy>
